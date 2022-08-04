@@ -7,18 +7,17 @@ interface props {
 }
 
 export default (props: props) => {
-  const linktext = props.link.split('//')[1]
-console.log(linktext)
+  const linktext = props.link.split("//")[1];
   return (
-      <a href={props.link} target="_blank">
-    <div className="card">
+    <a href={props.link} target="_blank">
+      <div className="card">
         <div>
           <img src={props.icon} />
           <h4>{props.title}</h4>
           <span>{linktext}</span>
         </div>
         <p>{props.description}</p>
-    </div>
-      </a>
+      </div>
+    </a>
   );
 };

@@ -47,6 +47,12 @@ function App() {
           />
         </div>
       </div>
+      <footer>
+        All Sites Developed by&nbsp;
+        <a href="https://github.com/JohnsCoder" target="_blank">
+          JohnCoder
+        </a>
+      </footer>
     </div>
   );
 }
