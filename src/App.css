@@ -41,10 +41,20 @@ footer a {
   .cards {
     grid-template-columns: 348px 348px;
   }
+  footer {
+    position: unset;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 730px) {
   .cards {
     grid-template-columns: 348px;
   }
+
+  footer {
+    position: unset;
+    margin-top: 20px;
+  }
 }
+
