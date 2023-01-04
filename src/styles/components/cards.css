@@ -1,40 +1,51 @@
 .card {
-     box-sizing: border-box;
-     margin: 0px;
-     background-color: black;
-     max-width: 348px;
-     height: 192px;
-     border: solid rgb(90, 90, 90) 1px;
-     border-radius: 10px;
-     transition: all .2s;
-     color: white;
-     padding: 30px;
+  box-sizing: border-box;
+  margin: 0px;
+  background-color: black;
+  max-width: 348px;
+  height: 192px;
+  border: solid rgb(90, 90, 90) 1px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  color: white;
+  padding: 30px;
 }
 
 .card:hover {
-     border: solid rgb(255, 255, 255) 1px;
-
+  border: solid rgb(255, 255, 255) 1px;
 }
 
 .card div {
-     display: grid;
-     grid-template-columns: 40px 200px;
-     grid-template-rows: 1fr 1fr;
-     margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 40px 200px;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 20px;
 }
 
-.card div img {
-     width: 35.92px;
-     grid-row-start: 1 ;
-     grid-row-end: 3 ;
+.card div img:nth-child(1) {
+  width: 35.92px;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
-.card div span{
-     color: rgb(126, 126, 126);
-     width: max-content;
+.card div span {
+  color: rgb(126, 126, 126);
+  width: max-content;
 }
 
 .card P {
-     color: rgb(175, 175, 175);
-     font-size:  0.95em;
+  color: rgb(175, 175, 175);
+  font-size: 0.95em;
 }
+.card > div img:nth-child(4) {
+  align-items: flex-end;
+  width: 20px;
+  margin-top: auto;
+  margin-left: 16px;
+}
+
+.card > div span:nth-child(5) {
+  font-size: 10pt;
+  margin-top: auto;
+}
+

@@ -1,50 +1,59 @@
 import Cards from "./components/cards";
 import { happyIcon, moveitIcon, reactIcon, viteIcon } from "./components/icons";
 import "./App.css";
+import { useEffect, useMemo, useState } from "react";
 
+type Repository = {
+  name: string;
+  description: string;
+  homepage: string;
+  language: string;
+};
 function App() {
+  const whiteList = [
+    "coin-converter",
+    "databasePeople-frontend",
+    "GPTOChat",
+    "myTodo-frontend",
+    "Windows-Calc",
+  ];
+  const [repositories, setRepositories] = useState<Repository[]>([]);
+  useMemo(() => {
+    fetch("https://api.github.com/users/JohnsCoder/repos")
+      .then((response) => response.json())
+      .then((data: Repository[]) => {
+        data.map((repository) =>
+          setRepositories((repos) =>
+            [
+              ...repos,
+              {
+                name: repository.name,
+                description: repository.description,
+                homepage: repository.homepage,
+                language: repository.language
+              },
+            ].filter((e) => whiteList.includes(e.name))
+          )
+        );
+      });
+  }, []);
+
   return (
     <div>
       <h1>My Portfolio</h1>
 
       <div className="homepage">
         <div className="cards">
-          <Cards
-            icon={viteIcon}
-            title="myAuth"
-            link="https://myoauth.vercel.app"
-            description="a login app with todo list"
-          />
-          <Cards
-            icon={reactIcon}
-            title="databasePeople"
-            link="https://database-people.vercel.app"
-            description="a crud app that do the 4 basic operations"
-          />
-          <Cards
-            icon={reactIcon}
-            title="coin_converter"
-            link="https://coin-converter-seven.vercel.app"
-            description="a currencie site that you can convert any coin"
-          />
-          <Cards
-            icon={moveitIcon}
-            title="moveit"
-            link="https://moveit-chi-umber.vercel.app"
-            description="a app that help people that pass a long time sitted - by rocketseat"
-          />
-          <Cards
-            icon={happyIcon}
-            title="happy"
-            link="https://happy-psi.vercel.app"
-            description="a app thinkned to connect people to orphanages - by rocketseat"
-          />
-          <Cards
-            icon={reactIcon}
-            title="windowsCalc"
-            link="https://windows-calc.vercel.app"
-            description="a windows calculator copy"
-          />
+          {repositories.map((element, index) => (
+            <Cards
+              key={index}
+              icon={reactIcon}
+              title={element.name}
+              link={element.homepage}
+              description={element.description}
+              language={element.language}
+            />
+          ))}
         </div>
       </div>
       <footer>

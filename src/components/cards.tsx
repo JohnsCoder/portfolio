@@ -4,6 +4,7 @@ interface props {
   title: string;
   link: string;
   description: string;
+  language: string;
 }
 
 export default (props: props) => {
@@ -15,6 +16,8 @@ export default (props: props) => {
           <img src={props.icon} />
           <h4>{props.title}</h4>
           <span>{linktext}</span>
+          <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${props.language.toLowerCase()}/${props.language.toLowerCase()}-plain.svg`} />
+          <span>{props.language}</span>
         </div>
         <p>{props.description}</p>
       </div>
