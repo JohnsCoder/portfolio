@@ -1,7 +1,19 @@
+.container {
+  background-color: #242424;
+  background: url("/src/assets/background/backgroundFlorestblack.png") no-repeat;
+  height: 100vh;
+  background-position: bottom;
+}
 h1 {
-  font-size: 2em;
-  text-align: center;
-  padding: 25px;
+  font-size: 30px;
+  text-align: left;
+  padding: 50px 0 0 60px;
+  font-family: "Source Code Pro", monospace;
+  color: #4fee4b;
+}
+h1 span {
+  color: #005c53;
+  font-family: "Sofia Sans", sans-serif;
 }
 .homepage {
   display: flex;
@@ -13,8 +25,9 @@ h1 {
 
 .cards {
   display: grid;
+  margin-top: 60px;
   grid-template-columns: 348px 348px 348px;
-  gap: 20px;
+  gap: 55px 65px;
 }
 
 footer {
@@ -27,14 +40,16 @@ footer {
   height: 30px;
   font-size: 1em;
   align-items: center;
+  font-family: "Source Code Pro", monospace;
+  color: #fff;
 }
 
 footer:hover a {
-  color: #535bf2;
+  color: #4fee4b;
 }
 footer a {
   font-size: 1.1em;
-  color: #646cff;
+  color: #005c53;
   font-weight: bolder;
 }
 @media (max-width: 1153px) {
@@ -57,4 +72,3 @@ footer a {
     margin-top: 20px;
   }
 }
-

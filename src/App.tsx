@@ -30,17 +30,19 @@ function App() {
                 name: repository.name,
                 description: repository.description,
                 homepage: repository.homepage,
-                language: repository.language
+                language: repository.language,
               },
             ].filter((e) => whiteList.includes(e.name))
           )
         );
       });
   }, []);
-
   return (
-    <div>
-      <h1>My Portfolio</h1>
+    <div className="container">
+      <h1>
+        <span>{"<H1>"}</span>&nbsp;Hi, I am João, and this is my portfolio.&nbsp;
+        <span>{"<H1>"}</span>
+      </h1>
 
       <div className="homepage">
         <div className="cards">
@@ -53,6 +55,7 @@ function App() {
               description={element.description}
               language={element.language}
             />
+
           ))}
         </div>
       </div>
