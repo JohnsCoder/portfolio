@@ -1,7 +1,7 @@
 .container {
   background-color: #242424;
   background: url("/src/assets/background/backgroundFlorestblack.png") no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   background-position: bottom;
 }
 h1 {
