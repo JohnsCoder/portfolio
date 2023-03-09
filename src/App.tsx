@@ -16,6 +16,7 @@ function App() {
     "GPTOChat",
     "myTodo-frontend",
     "Windows-Calc",
+    "hourlyBank-fe"
   ];
   const [repositories, setRepositories] = useState<Repository[]>([]);
   useMemo(() => {
