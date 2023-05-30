@@ -1,6 +1,7 @@
 .container {
   background-color: #242424;
   background: url("/src/assets/background/backgroundFlorestblack.png") no-repeat;
+  background-size: 100%;
   min-height: 100vh;
   background-position: bottom;
 }
