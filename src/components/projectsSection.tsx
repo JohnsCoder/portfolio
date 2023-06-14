@@ -1,10 +1,9 @@
 // import Cards from "./cards";
-import { happyIcon, moveitIcon, reactIcon, viteIcon } from "./icons";
+import icons from "../utils/icons";
 // import "../App.css";
 import styles from "../styles/components/projectsSection.module.css";
 import { useEffect, useMemo, useState } from "react";
 import Cards from "./cards";
-import { CardProvider } from "../contexts/cards.context";
 
 type Repository = {
   name: string;
@@ -47,18 +46,16 @@ export default function () {
       <h1>PROJECTS</h1>
 
       <div className={styles.cards}>
-        <CardProvider>
-          {repositories.map((element, index) => (
-            <Cards
-              key={index}
-              icon={reactIcon}
-              title={element.name}
-              link={element.homepage}
-              description={element.description}
-              language={element.language}
-            />
-          ))}
-        </CardProvider>
+        {repositories.map((element, index) => (
+          <Cards
+            key={index}
+            icon={icons.reactIcon}
+            title={element.name}
+            link={element.homepage}
+            description={element.description}
+            language={element.language}
+          />
+        ))}
       </div>
 
       <footer>

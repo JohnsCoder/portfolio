@@ -1,6 +1,5 @@
-import { useContext } from "react";
 import styles from "../styles/components/cards.module.css";
-import { CardContext } from "../contexts/cards.context";
+import icons from "../utils/icons";
 interface props {
   icon: string;
   title: string;
@@ -10,18 +9,9 @@ interface props {
 }
 
 export default (props: props) => {
-  const { cardHover } = useContext(CardContext);
   const linktext = props.link.split("//")[1];
   return (
-    <div
-      className={styles.card}
-      onMouseEnter={(el) => {
-        // cardHover.enter(el, props.title);
-      }}
-      onMouseLeave={(el) => {
-        // cardHover.leave(el);
-      }}
-    >
+    <div className={styles.card}>
       <div className={styles.info}>
         <div>
           <img src={props.icon} />
@@ -36,7 +26,7 @@ export default (props: props) => {
       </div>
       <div className={styles.navigate}>
         <a href={props.link} target="_blank">
-          <img src="/src/assets/icons/world.svg" alt="" />
+          <img src={icons.worldIcon} alt="" />
         </a>
         <hr />
         <a

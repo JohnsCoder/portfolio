@@ -5,7 +5,7 @@
 }
 
 .left-aside {
-  background: url("./src/assets/background/black-background.png") no-repeat;
+  background: url("/src/assets/background/black-background.png") no-repeat;
   width: 35%;
   display: flex;
   flex-direction: column;
@@ -94,7 +94,7 @@
 }
 
 .profile div {
-  background: url("./src/assets/background/paint-background.png") no-repeat;
+  background: url("/src/assets/background/paint-background.png") no-repeat;
   background-size: 100%;
   height: 92%;
   display: flex;

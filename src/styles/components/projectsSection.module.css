@@ -1,5 +1,5 @@
 .projects-section {
-  background: url("src/assets/background/white-background.png");
+  background: url("/src/assets/background/white-background.png");
   background-size: 100%;
   display: flex;
   flex-direction: column;
@@ -44,52 +44,3 @@ footer a {
   color: #005c53;
   font-weight: bolder;
 }
-
-/* .container {
-  background-color: #242424;
-  background: url("/src/assets/background/backgroundFlorestblack.png") no-repeat;
-  background-size: 100%;
-  min-height: 100vh;
-  background-position: bottom;
-}
-h1 {
-  font-size: 30px;
-  text-align: left;
-  padding: 50px 0 0 60px;
-  font-family: "Source Code Pro", monospace;
-  color: #4fee4b;
-}
-h1 span {
-  color: #005c53;
-  font-family: "Sofia Sans", sans-serif;
-}
-.homepage {
-  display: flex;
-  width: 100vw;
-  flex-direction: column;
-  align-items: center;
-  margin-top: calc(50vh - 202px - 106.31px);
-}
-
-
-
-@media (max-width: 1153px) {
-  .cards {
-    grid-template-columns: 348px 348px;
-  }
-  footer {
-    position: unset;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 730px) {
-  .cards {
-    grid-template-columns: 348px;
-  }
-
-  footer {
-    position: unset;
-    margin-top: 20px;
-  }
-} */

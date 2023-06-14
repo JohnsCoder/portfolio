@@ -1,7 +1,6 @@
 .card {
   box-sizing: border-box;
   margin: 0px;
-  /* background: url("/src/assets/background/cards/hourlyBank-fe.png") no-repeat; */
   background-color: rgba(0, 0, 0, 0.83);
   background-size: "369px";
   background-position: "center";
