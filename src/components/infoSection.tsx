@@ -28,14 +28,14 @@ export default function () {
             href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqWhHHBlfsgWLWbfvHtqPpctccFgPfCHfCzvdPlgTPWFCLngtsZPKQxJXdtJFjkVLzlSjB"
             target="_blank"
           >
-            <img src="/src/assets/icons/mail.svg" alt="" />
+            <img src="./src/assets/icons/mail.svg" alt="" />
             Email
           </a>
         </header>
         <div>
           <img
             className={styles.picture}
-            src="/src/assets/profile/profile-pic (12).png"
+            src="./src/assets/profile/profile-pic (12).png"
             alt=""
           />
         </div>
