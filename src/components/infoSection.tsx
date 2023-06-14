@@ -29,7 +29,7 @@ export default function () {
             href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqWhHHBlfsgWLWbfvHtqPpctccFgPfCHfCzvdPlgTPWFCLngtsZPKQxJXdtJFjkVLzlSjB"
             target="_blank"
           >
-            <img src={icons.worldIcon} alt="" />
+            <img src={icons.mailIcon} alt="" />
             Email
           </a>
         </header>
