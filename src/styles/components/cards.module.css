@@ -1,0 +1,109 @@
+.card {
+  box-sizing: border-box;
+  margin: 0px;
+  /* background: url("/src/assets/background/cards/hourlyBank-fe.png") no-repeat; */
+  background-color: rgba(0, 0, 0, 0.83);
+  background-size: "369px";
+  background-position: "center";
+  max-width: 348px;
+  height: 192px;
+  border: solid rgb(0, 0, 0) 4px;
+  border-radius: 10px;
+  padding: 30px;
+  font-family: "Source Code Pro", monospace;
+  overflow: hidden;
+
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.card > div:not(.info) {
+  display: none;
+  opacity: 0;
+}
+
+.card:hover .info{
+  display: none;
+  opacity: 0;
+}
+.card:hover .navigate{
+  display: flex;
+  opacity: 1;
+}
+
+.card div div h4 {
+  width: 100%;
+  font-size: 10.85pt;
+  color: white;
+}
+
+.card div div {
+  display: grid;
+  grid-template-columns: 40px 200px;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.card div div img:nth-child(1) {
+  width: 35.92px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.card div div span {
+  color: rgb(126, 126, 126);
+  width: max-content;
+}
+
+.card P {
+  color: rgb(175, 175, 175);
+  font-size: 0.95em;
+}
+.card > div div img:nth-child(4) {
+  align-items: flex-end;
+  width: 20px;
+  margin-top: auto;
+  margin-left: 16px;
+}
+
+.card > div div span:nth-child(5) {
+  font-size: 10pt;
+  margin-top: auto;
+}
+
+.navigate {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigate img {
+  width: 60px;
+  height: 60px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(243deg)
+    brightness(104%) contrast(104%);
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+.navigate a:hover img {
+  box-shadow: 1px 1px 70px 69px black;
+}
+
+.navigate a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+.navigate hr {
+  height: 120px;
+}
