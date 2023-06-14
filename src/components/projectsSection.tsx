@@ -1,5 +1,5 @@
 // import Cards from "./cards";
-import icons from "../utils/icons";
+import {icons} from "../utils/icons";
 // import "../App.css";
 import styles from "../styles/components/projectsSection.module.css";
 import { useEffect, useMemo, useState } from "react";

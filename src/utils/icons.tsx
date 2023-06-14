@@ -6,6 +6,8 @@ import viteIcon from "../assets/icons/vite.svg";
 import mailIcon from "../assets/icons/mail.svg";
 import worldIcon from "../assets/icons/world.svg";
 
+import pfp from "../assets/profile/profile-pic (12).png"
+
 const icons = {
   reactIcon,
   viteIcon,
@@ -15,5 +17,5 @@ const icons = {
   worldIcon,
 };
 
-const backgrounds = {};
-export default icons;
+
+export {icons, pfp};

@@ -1,5 +1,5 @@
 import styles from "../styles/components/cards.module.css";
-import icons from "../utils/icons";
+import {icons} from "../utils/icons";
 interface props {
   icon: string;
   title: string;

@@ -1,4 +1,5 @@
 import styles from "../styles/components/infoSection.module.css";
+import { icons, pfp } from "../utils/icons";
 export default function () {
   return (
     <div className={styles["info-section"]}>
@@ -28,16 +29,12 @@ export default function () {
             href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqWhHHBlfsgWLWbfvHtqPpctccFgPfCHfCzvdPlgTPWFCLngtsZPKQxJXdtJFjkVLzlSjB"
             target="_blank"
           >
-            <img src="./src/assets/icons/mail.svg" alt="" />
+            <img src={icons.worldIcon} alt="" />
             Email
           </a>
         </header>
         <div>
-          <img
-            className={styles.picture}
-            src="./src/assets/profile/profile-pic (12).png"
-            alt=""
-          />
+          <img className={styles.picture} src={pfp} alt="" />
         </div>
       </section>
     </div>
