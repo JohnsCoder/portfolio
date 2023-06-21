@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 984px) {
   .info-section {
     display: flex;
     flex-direction: row;
@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 70px;
   }
 
   .left-aside h1 {
@@ -65,7 +64,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 8%;
+    height: 66px;
   }
   .profile header a {
     display: flex;
@@ -97,8 +96,9 @@
 
   .profile div {
     background: url("/src/assets/background/paint-background.png") no-repeat;
-    background-size: 100%;
-    height: 92%;
+    background-size: cover;
+    background-attachment: fixed;
+    height: calc(100% - 66px);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -114,9 +114,14 @@
   }
 }
 
-@media (max-width: 600px) {
+
+
+
+
+
+@media (max-width: 983px) {
   .info-section {
-    height: 42vh;
+    height: 370px;
   }
 
   .left-aside {
@@ -173,7 +178,7 @@
 
   .profile {
     background: url("/src/assets/background/paint-background.png") no-repeat;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
