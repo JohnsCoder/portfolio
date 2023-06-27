@@ -4,6 +4,11 @@
   align-items: center;
   gap: 40px;
 }
+
+.cards > div:nth-child(-n + 2) {
+  border: solid #ffdf00 4px;
+}
+
 /* @media (min-width: 300px) {
 } */
 @media (min-width: 760px) {

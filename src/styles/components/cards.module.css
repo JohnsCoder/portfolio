@@ -11,6 +11,8 @@
   padding: 30px;
   font-family: "Source Code Pro", monospace;
   overflow: hidden;
+  box-shadow: 1px 1px 13px 1px;
+
 
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;

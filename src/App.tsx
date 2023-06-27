@@ -1,12 +1,15 @@
 import "./App.css";
 import InfoSection from "./components/infoSection";
 import ProjectsSection from "./components/projectsSection";
+import { ProjectProvider } from "./contexts/projects.context";
 
 function App() {
   return (
     <div>
       <InfoSection />
-      <ProjectsSection />
+      <ProjectProvider>
+        <ProjectsSection />
+      </ProjectProvider>
     </div>
   );
 }
