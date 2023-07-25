@@ -15,7 +15,7 @@ export default function () {
       <section className={styles.profile}>
         <header>
           <a
-            href="https://www.linkedin.com/in/jo%C3%A3o-pedro-pereira-dos-santos-7187b9189/"
+            href="https://www.linkedin.com/in/jo%C3%A3o-santos-7187b9189/"
             target="_blank"
           >
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
