@@ -6,7 +6,7 @@ import viteIcon from "../assets/icons/vite.svg";
 import mailIcon from "../assets/icons/mail.svg";
 import worldIcon from "../assets/icons/world.svg";
 
-import pfp from "../assets/profile/profile-pic (12).png"
+import pfp from "../assets/profile/linkedin_profile.jpeg"
 
 const icons = {
   reactIcon,

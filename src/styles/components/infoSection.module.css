@@ -13,15 +13,22 @@
     align-items: center;
   }
 
-  .left-aside h1 {
+  .left-aside .header-section {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .left-aside .header-section h1 {
     font-size: 44px;
     font-weight: 500;
     line-height: 44px;
     letter-spacing: 0em;
     color: #fff;
-    margin-top: 20px;
   }
-  .left-aside div {
+
+  .left-aside .main-text {
     position: absolute;
     top: 50%;
     align-self: flex-end;
@@ -144,7 +151,7 @@
     padding: 12.5px 0;
     align-self: center;
   }
-  .left-aside div {
+  .left-aside .main-text {
     display: flex;
     flex-direction: column;
     margin-top: 85px;

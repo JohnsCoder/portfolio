@@ -1,0 +1,47 @@
+.toggle {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-height: 35px;
+}
+
+.toggle:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.option {
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  min-width: 24px;
+  text-align: center;
+}
+
+.option.active {
+  background-color: #6da543;
+  color: white;
+  transform: scale(1.05);
+}
+
+.option:not(.active):hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 983px) {
+  .toggle {
+    padding: 3px;
+  }
+  
+  .option {
+    padding: 4px 8px;
+    font-size: 10px;
+    min-width: 20px;
+  }
+}
